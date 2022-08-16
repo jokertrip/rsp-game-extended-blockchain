@@ -1,0 +1,19 @@
+.gameMove {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.imageMove {
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+.selectedImage {
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 10px;
+    border: 1px solid blue;
+}

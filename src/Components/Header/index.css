@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logoWord {
+    margin: 40px;
+    font-weight: bold;
+    font-size: 30px;
+}

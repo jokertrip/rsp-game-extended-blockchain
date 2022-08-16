@@ -1,0 +1,34 @@
+.gameList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listItems {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.stakeAndButton {
+    display: flex;
+    justify-content: center;
+    min-height: 40px;
+}
+
+.playButton {
+    border-radius: 20px;
+    min-width: 100px;
+    background-color: #FFF;
+}
+
+.yourGame {
+    background-color: #FF8080;
+}
+
+.opponentGame {
+    background-color: #80B3FF;
+}
