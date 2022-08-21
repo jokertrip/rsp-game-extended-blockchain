@@ -8,6 +8,7 @@ import web3 from "../../smartContracts/web3";
 import RPS from '../../smartContracts/build/RPS.json'
 import {collection, setDoc, doc} from "firebase/firestore";
 import {db} from "../../firebase-config";
+import Hasher from "../../smartContracts/hasher";
 
 type Props = {
     address: string,
@@ -26,6 +27,7 @@ const NewGameScreen: React.FC<Props> = ({address, networkName}) => {
         console.log('opponentAddress', opponentAddress)
         console.log('yourMove', yourMove)
         const ethStake = Number(stake).toFixed(3)
+        const hasher = Hasher(networkName)
         if (!web3.utils.isAddress(opponentAddress)) {
             alert('Opponent address is incorrect')
             return
